@@ -35,26 +35,89 @@
         <!-- Main Content -->
         <main class="main-content">
             <div id="dashboard" class="tab-content active">
-                <h2>Welcome, [User Name]!</h2>
-                <p>Designation:[Executive]</p>
-                <p>Email: [user@example.com]</p>
-                <p>Last Login: [Last Login Date]</p>
+                <h2>Welcome, User Name!</h2>
+                <p>Designation:Executive</p>
+                <p>Email: user@example.com</p>
+                <p>Last Login: Last Login Date</p>
             </div>
             
             <div id="billManagement" class="tab-content">
                 <h2>Bill Management</h2>
-                <p>Here you can view and manage your bills.</p>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                    }
+                    th, td {
+                        padding: 12px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                    }
+                    th {
+                        background-color: #3498db;
+                    }
+                    .bill-table {
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        margin-top: 20px;
+                        border-radius: 8px;
+                    }
+                    .header {
+                        background-color: #3498db;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Welcome to Bill Management</h1>
+                <div id="bill-management-tab">
+                    <h2>Bill Overview</h2>
+                    <table class="bill-table">
+                        <thead>
+                            <tr class="header">
+                                <th>Bill Type</th>
+                                <th>Bill Name</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Consumable Bills -->
+                            <tr>
+                                <td>Consumable</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Non Consumable</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                <p>View and manage your bills.</p>
             </div>
             
             <div id="profile" class="tab-content">
                 <h2>Profile</h2>
                 <img src = "profile icon.png" , width = "200" ,height ="145">
                 <p>Update your profile information here.</p>
+                <p>Designation:[Executive]</p>
+                <p>Email: [user@example.com]</p>
             </div>
             
             <div id="settings" class="tab-content">
                 <h2>Settings</h2>
-                <p>Configure your preferences here.</p>
             </div>
         </main>
     </div>
